@@ -1,0 +1,56 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.NoActionBar" />
+
+    <style name="AppTheme" parent="AppBaseTheme" />
+
+    <style name="loading_large" >
+		<item name="android:indeterminateDrawable">@anim/loading_big</item>
+		<item name="android:layout_width">38.5dip</item> 
+		<item name="android:layout_height">38.5dip</item>
+	</style>
+	
+    <style name="imagepadding">
+	    <item name="android:background" >@color/white</item>  
+	    <item  name="android:padding">@dimen/text_size_12</item>
+	    <item name="android:layout_marginLeft">@dimen/image_mar_left</item>
+	    <item name="android:layout_marginRight">@dimen/image_mar_right</item>
+	    <item name="android:layout_marginTop">@dimen/image_mar_top</item>
+	    <item name="android:layout_marginBottom">@dimen/image_mar_bottom</item>
+   </style>
+   <!-- 文本控制 -->
+   <style name="text_control">
+       <item name="android:background">@color/white</item>
+       <item name="android:padding">@dimen/text_padding</item>
+   </style>
+     <style name="leftandright">
+	    <item name="android:layout_marginLeft">@dimen/image_mar_left</item>
+	    <item name="android:layout_marginRight">@dimen/image_mar_right</item>
+   </style>
+   <!-- 文本控制 -->
+    <!-- 自定义loading dialog -->  
+    <style name="picture_dialog" parent="android:style/Theme.Dialog">  
+        <item name="android:windowFrame">@null</item>  
+        <item name="android:windowNoTitle">true</item>   
+        <item  name="android:background">@color/lightgray</item>
+        <item name="android:windowIsFloating">true</item>  
+        <item name="android:windowContentOverlay">@null</item>  
+    </style>  
+    <!-- 选择照片底部弹出层 -->
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+ 	</style>
+    
+    
+    <style name="TitleBarBackground">  
+        <item name="android:background">@drawable/bg_title_bar</item>  
+    </style>  
+            
+    <style name="MyCustomTheme" parent="android:Theme">       
+         <item name="android:windowTitleBackgroundStyle">@style/TitleBarBackground</item>  
+         <item name="android:windowTitleSize">47dp</item>  
+    </style> 
+    
+
+</resources>

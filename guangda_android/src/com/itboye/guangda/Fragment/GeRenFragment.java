@@ -131,12 +131,16 @@ public class GeRenFragment extends Fragment implements OnClickListener {
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
-		//case R.id.head:
-		//choose=ChoosePictureDialog.getDialog(getActivity());
-		//	choose.show();
-		//choose.getWindow();
+		case R.id.head:
 
-		//	break;
+			if (!appContext.isLogin()) {
+				startActivityForResult((new Intent(getActivity(),LoginActivity.class)),1000);
+				getActivity().overridePendingTransition(R.anim.in_from_right,
+						R.anim.out_to_left);
+			}
+
+
+			break;
 		case R.id.mingzhi:
 			if (appContext.isLogin()==false) {
 				startActivityForResult((new Intent(getActivity(),LoginActivity.class)),1000);
@@ -177,7 +181,7 @@ public class GeRenFragment extends Fragment implements OnClickListener {
 		case R.id.guanyu:
 			Intent url=new Intent(getActivity(),WebViewActivity.class);
 			url.putExtra("postion","");
-			url.putExtra("Url","http://gd.itboye.com/index.php/Cms/Post/view/id/25.shtml");
+			url.putExtra("Url","http://120.199.28.62:8000/index.php/Cms/Post/view/id/25.shtml");
 			startActivity(url);
 			getActivity().overridePendingTransition(R.anim.in_from_right,
 					R.anim.out_to_left);

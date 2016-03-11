@@ -47,7 +47,7 @@ public class WebViewActivity extends Activity{
         postion=intent.getIntExtra("postion", -1);
         switch (postion) {
 		case 251:
-			url="http://gd.itboye.com/index.php/Home/Index/"
+			url="http://120.199.28.62:8000/index.php/Home/Index/"
 					+ "invite_code?id_code="+AppContext.getUserIdCode();
 			break;
 

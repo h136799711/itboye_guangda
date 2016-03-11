@@ -139,6 +139,7 @@ public class PasswordActivity extends Activity implements StrUIDataListener{
 		} catch (JSONException e1) {
 			e1.printStackTrace();
 		}
+		
 		if (code == 0) {
 			switch (state) {
 			case 1:
@@ -170,8 +171,13 @@ public class PasswordActivity extends Activity implements StrUIDataListener{
 			startActivity(intent);
 		} 
 		else {
-			Toast.makeText(PasswordActivity.this, "访问服务器错误" ,Toast.LENGTH_LONG)
-			.show();
+			if(userId != null){
+				Toast.makeText(PasswordActivity.this, userId,Toast.LENGTH_LONG)
+				.show();
+			}else{
+				Toast.makeText(PasswordActivity.this, "该账户已经注册" ,Toast.LENGTH_LONG)
+				.show();
+			}
 		}
 	}
 }

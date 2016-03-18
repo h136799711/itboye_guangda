@@ -32,23 +32,23 @@ import com.itboye.guangda.utils.ToastTime;
 import com.itboye.guangda_android.R;
 
 public class RegistActivity extends Activity implements StrUIDataListener {
-private 	Button btnNextStep;//下一步按钮
-private Button btnGetCheckCode;//获取验证码
-private  EditText edPhoneNumber;//手机号
-private EditText edCheckCode;//验证码编辑框
-private TextView tvUrl;//用户服务条款连接
-private EditText edIdCode;//注册优惠码
-private ImageView tvBackRegist;//注册返回按钮
-private String checkcode=null;//验证码内容
-private String forgetFlag=null;//忘记密码intent标记
-private TextView tvRegist;//注册titlebar
-private LinearLayout llTiaoKuan;//条款总布局
-public  int  Flags=0;//定义状态常量，用于表示几种验证码校验接口，对应是1 用户注册 2 忘记密码3 旧手机验证
-//4 新手机绑定
-String tempCode=null;//临时存储code
-private Intent intent;
-private StrVolleyInterface networkHelper;
-private CloseReceiver closeReceiver;
+	private 	Button btnNextStep;//下一步按钮
+	private Button btnGetCheckCode;//获取验证码
+	private  EditText edPhoneNumber;//手机号
+	private EditText edCheckCode;//验证码编辑框
+	private TextView tvUrl;//用户服务条款连接
+	private EditText edIdCode;//注册优惠码
+	private ImageView tvBackRegist;//注册返回按钮
+	private String checkcode=null;//验证码内容
+	private String forgetFlag=null;//忘记密码intent标记
+	private TextView tvRegist;//注册titlebar
+	private LinearLayout llTiaoKuan;//条款总布局
+	public  int  Flags=0;//定义状态常量，用于表示几种验证码校验接口，对应是1 用户注册 2 忘记密码3 旧手机验证
+	//4 新手机绑定
+	String tempCode=null;//临时存储code
+	private Intent intent;
+	private StrVolleyInterface networkHelper;
+	private CloseReceiver closeReceiver;
 
 	 protected void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);

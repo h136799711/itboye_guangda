@@ -112,6 +112,26 @@ public class ApiClient {
         params.put("type", "3");
         VolleyRequest.StrRequestPost(context, url, "finishRegisit",params, networkHelper);
 	}
+	
+
+	//发送密码，用户完成用手机号的注册
+	public static void finishRegisit(Context context,String username,
+			String  password, String idcode,String device_id,StrVolleyInterface networkHelper){
+		String access_token=AppContext.getAccess_token();
+		String url = Constant.URL+"/User/register?access_token="+access_token;
+		Map<String,String> params = new HashMap<String, String>();
+		//params.put("access_token", access_token);
+		System.out.println(username);
+		System.out.println(password);
+        params.put("username",username);  
+        params.put("password",password);
+        params.put("invite_code", idcode);
+        params.put("from", "0");
+        params.put("device_id", device_id);
+        params.put("device_type", "0");
+        params.put("type", "3");
+        VolleyRequest.StrRequestPost(context, url, "finishRegisit",params, networkHelper);
+	}
 
 	
 	

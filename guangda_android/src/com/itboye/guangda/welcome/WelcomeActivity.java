@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -19,6 +20,7 @@ import android.widget.LinearLayout;
 
 import com.itboye.guangda.HomePageActivity;
 import com.itboye.guangda.app.SharedConfig;
+import com.itboye.guangda.utils.DeviceHelper;
 import com.itboye.guangda_android.R;
 
 public class WelcomeActivity extends Activity implements OnPageChangeListener,
@@ -39,6 +41,7 @@ public class WelcomeActivity extends Activity implements OnPageChangeListener,
 		context = this;
 		images = new int[] { R.drawable.welcome_01, R.drawable.welcome_02,
 				R.drawable.welcome_03 };
+		
 		initView();
 
 	}

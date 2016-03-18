@@ -21,6 +21,7 @@ import com.android.volley.VolleyError;
 import com.itboye.guangda.api.ApiClient;
 import com.itboye.guangda.api.StrUIDataListener;
 import com.itboye.guangda.api.StrVolleyInterface;
+import com.itboye.guangda.utils.DeviceHelper;
 import com.itboye.guangda_android.R;
 
 public class PasswordActivity extends Activity implements StrUIDataListener{
@@ -73,10 +74,13 @@ public class PasswordActivity extends Activity implements StrUIDataListener{
 			System.out.println(idcode+"PPPPPPPPPPPPPPPPPPPP");
 			System.out.println(username);
 			System.out.println(password);
+			String device_id = DeviceHelper.getDeviceId(getApplicationContext());
+			Log.d("DEVICE_ID",device_id);
+			
 			if (name.equals(password)) {
 				switch (state) {
 				case 1:
-					ApiClient.finishRegisit(PasswordActivity.this,username, password,idcode, networkHelper);//用户注册来的
+					ApiClient.finishRegisit(PasswordActivity.this,username, password,idcode,device_id, networkHelper);//用户注册来的
 					break;
 				case 2:
 					ApiClient.forgetPassword(PasswordActivity.this, username, password, checkCode, networkHelper);

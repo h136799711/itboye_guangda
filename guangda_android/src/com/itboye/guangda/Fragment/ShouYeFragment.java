@@ -44,6 +44,7 @@ import com.itboye.guangda.api.StrVolleyInterface;
 import com.itboye.guangda.app.AppContext;
 import com.itboye.guangda.app.Constant;
 import com.itboye.guangda.utils.BitmapCache;
+import com.itboye.guangda.utils.DeviceHelper;
 import com.itboye.guangda_android.R;
 
 public class ShouYeFragment extends Fragment implements OnClickListener,

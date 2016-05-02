@@ -6,7 +6,7 @@ import java.util.HashMap;
 import android.R.string;
 
 public class Constant {
-	public static final String URL = "http://120.199.28.62:8000/api.php";
+	public static final String URL = "http://202.99.20.186:8000/api.php";
 	
 	public static final String MY_PREFERENCES = "MY_PREFERENCES";    //Preferences文件的名称   ,存登陆信息
 	public static final String MY_ACCOUNT = "MY_ACCOUNT";            //用户账号
@@ -15,7 +15,7 @@ public class Constant {
     public static final String MY_HEAD_URL="MY_HEAD_URL";//我的头像
     public static final String MY_BANGDING="MY_BANGDING";//绑定的手机号
     public static final String MY_NICKNAME="MY_NICKNAME";
-    public static final String 	IS_LOGIN="IS_LOGIN";//是否登陆
+    public static final String IS_LOGIN="IS_LOGIN";//是否登陆
     public static final String WEIXIN="WEIXIN";//微信是否绑定
     
 

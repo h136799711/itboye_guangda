@@ -181,7 +181,7 @@ public class GeRenFragment extends Fragment implements OnClickListener {
 		case R.id.guanyu:
 			Intent url=new Intent(getActivity(),WebViewActivity.class);
 			url.putExtra("postion","");
-			url.putExtra("Url","http://120.199.28.62:8000/index.php/Cms/Post/view/id/25.shtml");
+			url.putExtra("Url","http://202.99.20.186:8000/index.php/Cms/Post/view/id/25.shtml");
 			startActivity(url);
 			getActivity().overridePendingTransition(R.anim.in_from_right,
 					R.anim.out_to_left);

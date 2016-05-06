@@ -133,22 +133,22 @@ public class HomePageActivity extends FragmentActivity  implements OnClickListen
 		{
 		case R.id.tab_one:
 			changTabColor(0);
-			title.setText("阳光惠生活");
+			title.setText("阳光生活家");
 			mViewPager.setCurrentItem(0, false);
 			break;
 		case R.id.tab_two:
 			changTabColor(1);
-			title.setText("阳光惠生活");
+			title.setText("阳光生活家");
 			mViewPager.setCurrentItem(1, false);
 			break;
 		case R.id.tab_three:
 			changTabColor(2);
-			title.setText("阳光惠生活");
+			title.setText("阳光生活家");
 			mViewPager.setCurrentItem(2, false);
 			break;
 		case R.id.tab_four:
 			changTabColor(3);
-			title.setText("阳光惠生活");
+			title.setText("阳光生活家");
 			mViewPager.setCurrentItem(3, false);
 			break;
 		

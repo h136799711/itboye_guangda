@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="阳光惠生活"
+            android:text="阳光生活家"
             android:textColor="@color/white"
             android:textSize="@dimen/text_size_18" />
 

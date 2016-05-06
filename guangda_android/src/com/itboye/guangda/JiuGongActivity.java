@@ -45,7 +45,7 @@ public class JiuGongActivity extends Activity implements OnClickListener {
         iv_back.setVisibility(View.VISIBLE);
         iv_back.setOnClickListener(this);
         title=(TextView) findViewById(R.id.title);
-        title.setText("阳光惠生活");
+        title.setText("阳光生活家");
         title.setTextSize(TypedValue.COMPLEX_UNIT_SP,15);
         initView();
      
